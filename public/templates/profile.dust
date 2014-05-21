@@ -1,0 +1,7 @@
+{>"layouts/master" /}
+
+{<body}
+    <h1>{@pre type="content" key="greeting"/}</h1>
+    <p>Hello pathetic <strong>{user.name}</strong>, this is your profile page! YAAAGHAGHAGHGA.<br>
+    You are a lowly <strong>{user.role}</strong></p>
+{/body}

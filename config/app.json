@@ -1,0 +1,13 @@
+{
+  "port": 3000,
+  
+  "bcrypt": {
+    "difficulty": 8
+  },
+  
+  "databaseConfig": {
+  "host": "localhost",
+  "database": "passportTest"
+  }
+  
+}
