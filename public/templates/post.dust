@@ -3,38 +3,31 @@
 {<body}
     
         <div>
-          <form id="postForm" method="post">
-            <fieldset>
-              <h2>Login</h2>
-              {?messages}
-                     <ul>
-                         {#messages}
-                             <li>{.}</li>
-                         {/messages}
+<h1>Express Blog</h1>
  
-                     </ul>
-                 {/messages}
-                 <table>
-                     <tr>
-                         <td><label for="username">Login: </label></td>
-                         <td><input id="username" name="username" type="text"/></td>
-                     </tr>
-                     <tr>
-                         <td><label for="password">Password: </label></td>
-                         <td><input id="password" name="password" type="password"/></td>
-                     </tr>
-                     <tr>
-                         <td>
-                             <input type="submit" value="Login"/>
-                             <input type="hidden" name="_csrf" value="{_csrf}"/>
-                         </td>
-                         <td></td>
-                     </tr>
-                 </table>
- 
-             </fieldset>
-         </form>
+ <ul>
+{#posts}
+	<li>
+		<a href="/{title}">{title}</a>
+		<p>
+			{{body}}
+		</p>
+		<p>
+			<strong class="date">{publishedDate}</strong>
+		</p>
+	</li>
+{/posts}
+</ul>
+
+<a type="button" class="btn btn-info" href="post/new">new post</a>
+
+<area shape="" coords="" href="" alt="">
        </div>
+
+
+       <h1>Hello there! {title}</h1>
+
+        <p>{posts}</p>
     
             
 {/body}
